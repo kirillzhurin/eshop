@@ -7,7 +7,7 @@ const Rating = ({ value, text, color }) => {
 
   for (let index = 1; index <= maxValue; index++) {
     stars.push(
-      <span>
+      <span key={index}>
         <i style={{ color }}
           className={
             value >= index
