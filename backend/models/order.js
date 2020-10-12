@@ -16,7 +16,7 @@ const orderSchema = mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: 'Product',
-       },
+      },
     }
   ],
   shippingAddress: {
@@ -30,31 +30,30 @@ const orderSchema = mongoose.Schema({
     required: true,
   },
   paymentResult: {
-    id: { type: String},
-    status: { type: String},
-    updateTime: { type: String},
-    emailAddress: { type: String},
-    
+    id: { type: String },
+    status: { type: String },
+    updateTime: { type: String },
+    emailAddress: { type: String },
   },
   taxPrice: {
     type: Number,
     required: true,
-    default: .0
+    default: .0,
   },
   shippingPrice: {
     type: Number,
     required: true,
-    default: .0
+    default: .0,
   },
   totalPrice: {
     type: Number,
     required: true,
-    default: .0
+    default: .0,
   },
   isPaid: {
     type: Boolean,
     required: true,
-    default: false
+    default: false,
   },
   paidAt: {
     type: Date,
@@ -62,7 +61,7 @@ const orderSchema = mongoose.Schema({
   isDelivired: {
     type: Boolean,
     required: true,
-    default: false
+    default: false,
   },
   deliveredAt: {
     type: Date,
